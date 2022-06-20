@@ -42,4 +42,20 @@
       function toFahrenheit(event) {
         fahrenheit.innerHTML = "64";
       }
+      let currentLocation = document.querySelector("#current-location");
+currentLocation.addEventListener("click", getPosition);
+navigator.geolocation.getCurrentPosition(getPosition);
+function getPosition(position) {
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+  let unit = "metric";
+  let apiKey = "a428a87920120d37f7d5ad10a19c7a5a";
+  let apiLink = `https://api.openweathermap.org/data/2.5/find?lat=${latitude}&lon=${longitude}&appid=${apiKey}&unit=${unit}`;
+  axios.get(apiLink).then(showTemp);
+}
+function showTemp(event) {
+ let city= document.querySelector("h2")
+ city.innerHTML= position.coords.timezone
+
+}
    

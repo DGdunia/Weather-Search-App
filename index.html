@@ -16,6 +16,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Lato:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="src/index.css" />
   </head>
   <body>
     <div class="row dateNtime">
@@ -32,6 +34,9 @@
               id="city-input"
             />
             <input type="submit" class="btn btn-info" value="search" />
+            <button type="button" class="btn btn-light" id="current-location">
+              Current
+            </button>
           </form>
         </div>
       </div>
@@ -76,5 +81,6 @@
         <span class="weatherIcon"> &#9728;</span>
       </div>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
