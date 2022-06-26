@@ -1,71 +1,77 @@
 body {
-  margin: auto;
-  padding: 40px;
-  border: 0.5px solid rgb(54, 147, 233);
+  display: block;
+  margin: 0 auto;
+  padding: 100px 120px;
+  background-color: #fcffc1;
+  border: 0.1px solid rgb(54, 147, 233);
 }
 h1 {
   font-size: 24px;
-  font-weight: 800;
+  color: #346357;
+  font-weight: bolder;
   margin: auto;
-  padding: 0px 20px;
+  padding: 0px 0px 10px 0px;
   font-family: "Inter", sans-serif;
 }
 h2 {
   margin: auto;
-  padding: 0px 20px;
+  padding: 0px 0px 10px 0px;
   font-size: 22px;
   font-weight: bolder;
-  color: rgb(54, 147, 233);
+  color: #346357;
   font-family: "Inter", sans-serif;
 }
-h3 {
-  margin: auto;
-  padding: 0px 30px;
-  font-size: 22px;
-  font-weight: bold;
-  font-family: "Inter", sans-serif;
-  left: 15px;
-}
-
-li {
+ul li {
   list-style: none;
   font-size: 15px;
+  color: #346357;
   font-weight: lighter;
   font-family: "Inter", sans-serif;
-}
-
-.topIcon {
   display: block;
-  font-size: 70px;
+  margin: 0 auto;
+}
+#current-temp {
+  color: #346357;
+  display: block;
   margin: auto;
 }
-
+#topicon {
+  font-size: 90px;
+  display: block;
+  margin: auto;
+  padding: 0px 10px;
+}
 .dateNtime {
-  outline: rgb(54, 147, 233);
+  outline: #8b9794;
   margin: auto;
   padding: 15px;
-  border: 0.5px solid rgb(54, 147, 233);
 }
 
 .comingDate {
   font-size: 15px;
   font-weight: bold;
   font-family: "Inter", sans-serif;
-  color: rgb(54, 147, 233);
+  color: #346357;
   margin: auto;
   padding: 30px;
-  border: 0.5px solid rgb(54, 147, 233);
+  background-color: #9bf4d5;
 }
 
 .weatherIcon {
-  display: block;
   font-size: 40px;
-  right: 300px;
 }
 .changeCity {
-  padding: 15px;
+  padding: 20px 0px;
+  display: block;
+  margin: 0 auto;
 }
 .changeCity #city-input {
-  padding: 5px;
-  border: 1px solid rgb(54, 147, 233);
+  margin: auto;
+  padding: 10px 0px;
+  border: 0.1px solid #9bf4d5;
+  margin: 0px 10px;
+}
+.search-location {
+  padding: 30px;
+  display: inline;
 }
