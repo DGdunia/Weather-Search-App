@@ -23,70 +23,64 @@
     <div class="col">
       <div class="row dateNtime">
         <div class="changeCity">
-          <form id="search-city">
-            <input
-              type="text"
-              placeholder="Search for a City"
-              autofocus="on"
-              id="city-input"
-            />
-            <div class="search-location">
-              <input
-                type="submit"
-                class="btn btn-outline-info"
-                value="Search"
-              />
-              <button
-                type="button"
-                class="btn btn-outline-success"
-                id="current-location"
-              >
-                Current Location
-              </button>
-            </div>
-          </form>
+          <input
+            id="city-input"
+            type="text"
+            placeholder="    Search for a City"
+            autofocus="on"
+          />
+          <div class="search-location">
+            <input type="submit" id="search-city" value="Search" />
+            <button type="button" id="current-location">
+              Current Location
+            </button>
+          </div>
         </div>
         <div class="col" id="city-date">
           <h1 id="city">London</h1>
           <h2 id="today-date">Tuesday, 16:00</h2>
-        </div>
-        <div class="col" id="current-temp">
-          <ul>
-            <li id="humidity">Humidity</li>
-            <li id="wind">Wind</li>
-          </ul>
           <div class="temp">
-            <strong> <a href="#" id="celsius">&#8451;</a> </strong>
+            <p id="topicon">&#9728;</p>
+
+            <div class="col" id="current-temp">
+              <p><a href="#" id="celsius"> &#8451;</a></p>
+              <ul>
+                <li id="humidity">Humidity:</li>
+                <li id="wind">Wind:</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="col" id="topicon">&#9728;</div>
       </div>
-      <div class="row comingDate">
-        <div class="col">
+      <div class="row forcast-El">
+        <button>Right</button>
+        <div class="comingDate">
           Wednesday 10 &#8451;
           <span class="weatherIcon"> &#x26C8;</span>
         </div>
-        <div class="col">
+        <div class="comingDate">
           Thursday 7 &#8451;
           <span class="weatherIcon"> &#x26C8;</span>
         </div>
-        <div class="col">
+        <div class="comingDate">
           Friday 10 &#8451;
-          <span class="weatherIcon"> &#x26C5; </span>
+          <div class="weatherIcon">&#x26C5;</div>
         </div>
-        <div class="col">
+        <div class="comingDate">
           Saturday 10 &#8451;
           <span class="weatherIcon"> &#x26C5;</span>
         </div>
-        <div class="col">
+        <div class="comingDate">
           Sunday 18 &#8451;<span class="weatherIcon"> &#x1F324;</span>
         </div>
-        <div class="col">
+        <div class="comingDate">
           Monday 20 &#8451;
           <span class="weatherIcon"> &#9728;</span>
         </div>
+        <button>left</button>
       </div>
     </div>
+
     <footer>
       Coded By
       <a href="https://github.com/DGdunia/Weather-Search-App"> Dunia Giliu </a>
