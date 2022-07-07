@@ -3,109 +3,147 @@ body {
   display: block;
   margin: auto;
   padding: 50px;
-  font-family: "Inter", sans-serif;
-  border: 0.1px solid black;
-}
-.dateNtime {
-  padding: 20px;
-  border-radius: 15px;
   background-color: rgb(255, 252, 247);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-family: "Roboto Slab", serif;
 }
-#city-input {
-  width: 80%;
-  padding: 20px;
-  align-items: center;
-  margin: 10px 20px;
-  border-color: 2px solid #394e94;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border: rgb(255, 252, 247);
-  border-radius: 10px;
-}
-.search-location {
-  text-align: right;
-  margin: 10px 0px;
-  padding: 10px;
-}
-#search-city {
-  padding: 5px 30px;
-  background-color: rgb(255, 252, 247);
-  color: #394e94;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 10px;
-  border: rgb(255, 252, 247);
-}
-#search-city hover {
-  cursor: pointer;
-  transition: ease-in-out;
-  background-color: #394e94;
-  color: rgb(255, 252, 247);
-}
-#current-location {
-  padding: 5px 30px;
-  background-color: rgb(255, 252, 247);
-  color: #394e94;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 10px;
-  border: rgb(255, 252, 247);
-}
-#current-location hover {
-  cursor: pointer;
-  transition: ease-in-out;
-  background-color: #394e94;
-  color: rgb(255, 252, 247);
-}
+
 .changeCity {
+  width: 100%;
   padding: 15px;
   background-color: #394e94;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
   margin: 20px 0px;
 }
-#city-date {
-  padding: 20px;
+#search-city {
+  widows: 30%;
+  padding: 20px 30px;
+  margin: 0px 20px;
+  background-color: rgb(255, 252, 247);
+  color: #394e94;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
+  border: rgb(255, 252, 247);
+  font-weight: bolder;
+}
+#current-location {
+  align-items: center;
+  margin: 30px 25px;
+  padding: 20px 30px;
+  font-weight: bolder;
+  background-color: rgb(255, 252, 247);
+  color: #394e94;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  border: rgb(255, 252, 247);
+}
+
+#city-input {
+  width: 80%;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  align-items: center;
+  margin: 20px;
+  border-color: 2px solid rgb(17, 16, 14);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+}
+
+.dateNtime {
+  padding: 60px 60px;
+  margin: 0 auto;
+  border-radius: 15px;
+  background-color: rgb(255, 252, 247);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: #394e94;
+  border-radius: 10px;
+  border: rgb(255, 252, 247);
+}
+#city-date {
+  align-items: left;
+  padding: 20px;
+  width: 80%;
 }
 
 h1 {
   font-weight: bolder;
   font-size: 50px;
-  font-family: "Inter", sans-serif;
-  text-align: left;
-  padding: 10px 10px;
+  font-family: "Roboto Slab", serif;
   color: #394e94;
+  text-transform: capitalize;
+
+  padding-top: 10px;
 }
 h2 {
   color: #394e94;
   font-weight: bolder;
-  font-size: 30px;
-  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-family: "Roboto Slab", serif;
   text-align: left;
-  padding: 10px 10px;
+  padding-bottom: 20px;
+  color: #394e94;
 }
+
+.temp-unit {
+  text-decoration-style: none;
+  color: #394e94;
+  font-weight: bolder;
+  font-size: 30px;
+  font-family: "Roboto Slab", serif;
+  padding: 15px 30px;
+}
+.temp-unit-display {
+  color: #394e94;
+  font-size: 20px;
+  display: inline;
+  text-decoration: none;
+}
+.temp-unit-display .active {
+  text-decoration: none;
+  cursor: default;
+  text-decoration: none;
+  color: #394e94;
+}
+
+.temp-unit-display .active:hover {
+  text-decoration: underline;
+}
+
 #topicon {
-  text-align: left;
+  text-align: right;
   padding: 20px;
   font-size: 100px;
   color: yellow;
   display: inline;
+  margin-left: 30px;
 }
 ul {
   list-style: none;
-}
-#current-temp {
   font-size: 20px;
   color: #394e94;
-  font-family: "Inter", sans-serif;
-  text-align: right;
-  display: inline;
-  position: relative;
-  bottom: 130px;
-  right: 250px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  padding: 15px;
+  font-family: "Roboto Slab", serif;
+  text-transform: capitalize;
 }
+
+#current-temp {
+  padding-top: 40px;
+  font-weight: inherit;
+  font-size: 10px;
+  text-align: left;
+  display: inline;
+  margin-right: 200px;
+}
+
+button {
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgb(255, 252, 247);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 20px 0px;
+  color: #394e94;
+  border: rgb(255, 252, 247);
+}
+
 .comingDate {
   padding: 20px;
   border-radius: 15px;
@@ -116,7 +154,17 @@ ul {
 .forcast-El {
   padding: 20px;
   border-radius: 15px;
-  background-color: rgb(255, 252, 247);
+  background-color: #394e94;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin: 20px 0px;
+  font-family: "Roboto Slab", serif;
+  color: #394e94;
+}
+
+#display-temp {
+  font-size: 25px;
+  padding: 10px;
+}
+#skyDescription {
+  text-transform: capitalize;
 }

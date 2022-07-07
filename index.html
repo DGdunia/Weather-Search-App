@@ -13,45 +13,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Lato:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap"
       rel="stylesheet"
     />
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" type="text/css" href="src/index.css" />
   </head>
   <body>
-    <div class="col">
-      <div class="row dateNtime">
-        <div class="changeCity">
-          <input
-            id="city-input"
-            type="text"
-            placeholder="    Search for a City"
-            autofocus="on"
-          />
-          <div class="search-location">
-            <input type="submit" id="search-city" value="Search" />
-            <button type="button" id="current-location">
-              Current Location
-            </button>
-          </div>
-        </div>
-        <div class="col" id="city-date">
-          <h1 id="city">London</h1>
-          <h2 id="today-date">Tuesday, 16:00</h2>
-          <div class="temp">
-            <p id="topicon">&#9728;</p>
+    <div class="row">
+      <div class="changeCity">
+        <input
+          id="city-input"
+          type="text"
+          placeholder=" Type a city"
+          autofocus="on"
+        />
+        <input type="submit" id="search-city" value="Search City" />
+        <button id="current-location">Current Location</button>
+      </div>
+    </div>
 
-            <div class="col" id="current-temp">
-              <p><a href="#" id="celsius"> &#8451;</a></p>
-              <ul>
-                <li id="humidity">Humidity:</li>
-                <li id="wind">Wind:</li>
-              </ul>
-            </div>
+    <div class="row dateNtime">
+      <div class="col 3" id="temp-icon">
+        <img src="#" alt="" id="topicon" />
+      </div>
+      <div class="col 6" id="city-date">
+        <h1 id="city"></h1>
+        <h2><span id="today-date"> </span></h2>
+        <div class="temp-unit">
+          <strong id="display-temp"> </strong>
+          <div class="temp-unit-display">
+            <span> <a href="#" id="celsius" class="active">°C </a> | </span>
+            <span> <a href="#" id="fahrenheit"> °F </a> </span>
           </div>
         </div>
       </div>
+      <div class="col 3" id="current-temp">
+        <ul>
+          <li id="sky-description"></li>
+          <li id="humidity"></li>
+          <li id="wind"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col">
       <div class="row forcast-El">
         <button>Right</button>
         <div class="comingDate">
@@ -80,7 +86,6 @@
         <button>left</button>
       </div>
     </div>
-
     <footer>
       Coded By
       <a href="https://github.com/DGdunia/Weather-Search-App"> Dunia Giliu </a>
