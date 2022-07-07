@@ -19,6 +19,7 @@ if (minutes < 10) {
   "Saturday"
 ];
 let currentDay = days[date.getDay()];
+let cityInput= London
 return `${currentDay} ${time}:${minutes}`
 }
 let temp= null;
