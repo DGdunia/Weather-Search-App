@@ -19,7 +19,7 @@ if (minutes < 10) {
   "Saturday"
 ];
 let currentDay = days[date.getDay()];
-let cityInput= London
+let cityInput= "London"
 return `${currentDay} ${time}:${minutes}`
 }
 let temp= null;
@@ -29,7 +29,7 @@ searchCity.addEventListener("click", searchingCity);
 
 function searchingCity(event) {
   event.preventDefault();
-  let cityInput = document.querySelector("#city-input");
+  cityInput = document.querySelector("#city-input");
   let h1 = document.querySelector("h1");
   h1.innerHTML = cityInput.value;
   cityTemp(cityInput.value);
@@ -95,7 +95,7 @@ let apiLink = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&l
 axios.get(apiLink).then(positionTemp);
 }
 function positionTemp(response) {
-  let displayTemp = document.querySelector("#temperature-El");
+  let displayTemp = document.querySelector("#display-temp");
   displayTemp.innerHTML =  Math.round(response.data.main.temp);
   let windSpeed = Math.round(response.data.wind.speed);
   let wind = document.querySelector("#wind");
