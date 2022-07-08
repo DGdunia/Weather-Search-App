@@ -60,8 +60,21 @@ function showTemp(response) {
   timeStampUpdated= lastUdated(response.data.dt *1000)
   lastUpdate.innerHTML = `last Updated: ${timeStampUpdated}`;
   let weatherIcon = document.querySelector("#topicon");
-  weatherIcon.setAttribute("src", `http://openweathermap.prg/img/wn/${response.data.weather[0].icon}@2x.png`)
+  weatherIcon.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`)
 }
+
+
+
+
+let celsius = document.querySelector("#celsius");
+celsius.addEventListener("click", toCelsius);
+function toCelsius(event) {
+  event.preventDefault();
+  celsius.classList.add("active")
+  fahrenheit.classList.remove("active")
+  let celsiusTemp = document.querySelector("#display-temp")
+  celsiusTemp.innerHTML = temp ;
+    }
 
 let fahrenheit = document.querySelector("#fahrenheit");
     fahrenheit.addEventListener("click", toFahrenheit);
@@ -74,15 +87,6 @@ let fahrenheit = document.querySelector("#fahrenheit");
      displayfahrenheitTemp.innerHTML = Math.round(fahrenheitTemp);
     }
 
-let celsius = document.querySelector("#celsius");
-celsius.addEventListener("click", toCelsius);
-function toCelsius(event) {
-  event.preventDefault();
-  celsius.classList.add("active")
-      fahrenheit.classList.remove("active")
-  let celsiusTemp= document.querySelector("#display-temp")
-  celsiusTemp.innerHTML = temp ;
-    }
 
 let currentLocation = document.querySelector("#current-location");
 currentLocation.addEventListener("click", navigator.geolocation.getCurrentPosition(getPosition));
@@ -111,5 +115,5 @@ city.innerHTML= response.data.name;
 let skyDescription =document.querySelector("#sky-description")
   skyDescription.innerHTML= response.data.weather[0].description
   let weatherIcon = document.querySelector("#topicon");
-  weatherIcon.setAttribute("src", `http://openweathermap.prg/img/wn/${response.data.weather[0].icon}@2x.png`);
+  weatherIcon.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
