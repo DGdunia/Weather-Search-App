@@ -134,18 +134,8 @@ ul {
   margin-right: 200px;
 }
 
-button {
-  padding: 20px;
-  border-radius: 15px;
-  background-color: rgb(255, 252, 247);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin: 20px 0px;
-  color: #394e94;
-  border: rgb(255, 252, 247);
-}
-
 .comingDate {
-  padding: 20px;
+  padding: 30px;
   border-radius: 15px;
   background-color: rgb(255, 252, 247);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
